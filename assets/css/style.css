@@ -1,0 +1,56 @@
+header {
+    background-color: blanchedalmond;
+    display: flex;
+    height: 200px;
+}
+
+h1 {
+    font-size: 200%;
+    
+}
+
+header .inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 150%;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 0.1em;
+}
+
+header nav ul li a {
+    color:blueviolet;
+    text-decoration: none;
+    background-color: black;
+    padding: 1em;
+}
+header nav ul li a:hover {
+    color: cadetblue;
+    text-transform: uppercase;
+}
+.hero {
+    background-color: blanchedalmond;
+    min-height: 200px;
+}
+
+.inner {
+    width: 75%;
+    margin: auto;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 25% 40% 25%;
+    column-gap: 1em;
+    row-gap: 2em;
+    text-align: center;
+    margin: auto;
+}
+
+.gallery p {
+    background-color: blueviolet;
+    padding: 3em;
+}
