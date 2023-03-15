@@ -45,7 +45,7 @@ header nav ul li a:hover {
     display: grid;
     grid-template-columns: 25% 40% 25%;
     column-gap: 1em;
-    row-gap: 2em;
+    row-gap: 3em;
     text-align: center;
     margin: auto;
 }
