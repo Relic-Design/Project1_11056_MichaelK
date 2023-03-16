@@ -1,7 +1,7 @@
 header {
-    background-color: blanchedalmond;
+    background-color: #FFFFFF;
     display: flex;
-    height: 200px;
+    height: 115px;
 }
 
 h1 {
@@ -9,11 +9,16 @@ h1 {
     
 }
 
+h2 {
+    color: #FFFFFF;
+    font-size: 275%;
+    text-align: center;
+}
+
 header .inner {
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    font-size: 150%;
 }
 
 header nav ul li {
@@ -32,12 +37,14 @@ header nav ul li a:hover {
     text-transform: uppercase;
 }
 .hero {
-    background-color: blanchedalmond;
-    min-height: 200px;
+    background-color: #25242D;
+    min-height: 650px;
+    display: flex;
+    padding: 0px;
 }
 
 .inner {
-    width: 75%;
+    width: 80%;
     margin: auto;
 }
 
