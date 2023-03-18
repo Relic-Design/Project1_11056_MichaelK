@@ -6,13 +6,20 @@ header {
 
 h1 {
     font-size: 200%;
-    
 }
 
 h2 {
     color: #FFFFFF;
-    font-size: 275%;
+    font-size:calc(14px + 3.5vw);
     text-align: center;
+    font-style: italic;
+}
+
+.hero img {
+    max-width: 110%;
+    max-height: 110%;
+    min-height: 200px;
+    min-width: 200px;
 }
 
 header .inner {
@@ -37,10 +44,12 @@ header nav ul li a:hover {
     text-transform: uppercase;
 }
 .hero {
+    display: grid;
+    grid-template-columns: 50% 50%;
     background-color: #25242D;
-    min-height: 650px;
-    display: flex;
+    max-height: 650px;
     padding: 0px;
+    min-height: 200px;
 }
 
 .inner {
@@ -60,4 +69,9 @@ header nav ul li a:hover {
 .gallery p {
     background-color: blueviolet;
     padding: 3em;
+}
+
+.reactivevanish {
+    height: auto;
+    max-width: 100%;
 }
