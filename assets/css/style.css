@@ -10,8 +10,11 @@ h1 {
 
 h2 {
     color: #FFFFFF;
-    font-size:calc(14px + 3.5vw);
+    font-size:calc(12px + 3.5vw);
     text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
     font-style: italic;
 }
 
