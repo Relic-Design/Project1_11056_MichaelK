@@ -1,11 +1,23 @@
 header {
     background-color: #FFFFFF;
-    display: flex;
-    height: 115px;
+    display: grid;
+    height:calc(50px + 6vw);
+    place-items: center;
+    min-height: 100px;
 }
 
 h1 {
-    font-size: 200%;
+    font-size: 4vw;
+    text-align: center;
+    place-self: center;
+}
+
+header img {
+    width: 100%;
+    max-width: 250px;
+    min-height: 80%;
+    min-width: 165px;
+
 }
 
 h2 {
@@ -26,9 +38,10 @@ h2 {
 }
 
 header .inner {
-    display: flex;
+    display: grid;
     justify-content: space-between;
     gap: 20px;
+    grid-template-columns: 20% 60% 20%;
 }
 
 header nav ul li {
@@ -56,7 +69,7 @@ header nav ul li a:hover {
 }
 
 .inner {
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 
