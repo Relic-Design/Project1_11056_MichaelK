@@ -4,12 +4,14 @@ header {
     height:calc(50px + 6vw);
     place-items: center;
     min-height: 100px;
+    max-height: 140px;
 }
 
 h1 {
     font-size: 4vw;
     text-align: center;
     place-self: center;
+    max-height: 120px;
 }
 
 header img {
