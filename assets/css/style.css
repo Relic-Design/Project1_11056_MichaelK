@@ -1,10 +1,15 @@
+body {
+    font-size: 16px;
+
+}
+
 header {
     background-color: #FFFFFF;
     display: grid;
     height:calc(50px + 6vw);
     place-items: center;
-    min-height: 100px;
-    max-height: 140px;
+    min-height: 140px;
+    max-height: 180px;
 }
 
 h1 {
@@ -18,13 +23,13 @@ header img {
     width: 100%;
     max-width: 250px;
     min-height: 80%;
-    min-width: 165px;
+    min-width: 200px;
 
 }
 
 h2 {
     color: #FFFFFF;
-    font-size:calc(12px + 3.5vw);
+    font-size:calc(30px + 2.5vw);
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -35,8 +40,6 @@ h2 {
 .hero img {
     max-width: 110%;
     max-height: 110%;
-    min-height: 200px;
-    min-width: 200px;
 }
 
 header .inner {
@@ -65,9 +68,13 @@ header nav ul li a:hover {
     display: grid;
     grid-template-columns: 50% 50%;
     background-color: #25242D;
+    background-image: url(../images/divingboard.png);
+    background-repeat: no-repeat;
+    background-position: right;
     max-height: 650px;
     padding: 0px;
-    min-height: 200px;
+    min-height: 650px;
+    overflow: hidden;
 }
 
 .inner {
@@ -82,6 +89,7 @@ header nav ul li a:hover {
     row-gap: 3em;
     text-align: center;
     margin: auto;
+    justify-content: center;
 }
 
 .gallery p {
