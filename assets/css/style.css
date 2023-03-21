@@ -1,6 +1,7 @@
 body {
     font-size: 16px;
-
+    font-family: "apparat", sans-serif;
+    font-style: normal;
 }
 
 header {
@@ -61,13 +62,13 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color:blueviolet;
+    color:black;
     text-decoration: none;
-    background-color: black;
     padding: 1em;
+    font-size: 1.3em;
 }
 header nav ul li a:hover {
-    color: cadetblue;
+    color: orange;
     text-transform: uppercase;
 }
 .hero {
