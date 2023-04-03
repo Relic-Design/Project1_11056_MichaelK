@@ -2,6 +2,7 @@ body {
     font-size: 16px;
     font-family: "apparat", sans-serif;
     font-style: normal;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -9,8 +10,10 @@ header {
     display: grid;
     height:calc(50px + 6vw);
     place-items: center;
-    min-height: 140px;
-    max-height: 180px;
+    min-height: 100px;
+    max-height: 120px;
+    position: sticky;
+    top: 0;
 }
 
 h1 {
@@ -22,15 +25,17 @@ h1 {
 
 header img {
     width: 100%;
-    max-width: 250px;
+    max-width: 200px;
     min-height: 80%;
-    min-width: 200px;
+    min-width: 150px;
 
 }
 
 h2 {
     color: #FFFFFF;
-    font-size:calc(30px + 2.5vw);
+    font-size:calc(5vw);
+    padding-top: 10vw;
+    padding-bottom: 10vw;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -38,17 +43,12 @@ h2 {
     font-style: italic;
 }
 
-.hero img {
-    max-width: 110%;
-    max-height: 110%;
-
-}
 
 header .inner {
     display: grid;
     justify-content: space-between;
     gap: 20px;
-    grid-template-columns: 20% 30% 50%;
+    grid-template-columns: 12% 88%;
 }
 header nav {
     display: flex;
@@ -64,21 +64,22 @@ header nav ul li {
 header nav ul li a {
     color:black;
     text-decoration: none;
-    padding: 1em;
-    font-size: 1.3em;
+    padding: 0.8em;
+    font-size:calc(10px + 1vw);
 }
+
 header nav ul li a:hover {
     color: orange;
     text-transform: uppercase;
 }
+
 .hero {
     display: grid;
     grid-template-columns: 50% 50%;
     background-color: #25242D;
-    max-height: 650px;
     padding: 0px;
-    min-height: 650px;
     overflow: hidden;
+    min-height: 20em;
 }
 
 .inner {
@@ -107,10 +108,75 @@ header nav ul li a:hover {
 }
 
 .heroimg {
-    max-height: 650px;
     width: 100%;
     height: 100%;
     background-image: url(../images/divingboard.png);
     background-repeat: no-repeat;
     background-position: right;
+    background-size: 100% 100%;
+}
+
+main {
+    padding: 4em;
+}
+
+.gridcontainer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 3em;
+    row-gap: 3em;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+}
+
+section {
+    max-height: 250px;
+    min-height: 250px;
+}
+
+aside {
+    max-height: 250px;
+    min-height: 250px;
+}
+
+footer {
+    background-color: #25242D;
+    max-height: 20em;
+    color: #FFFFFF;
+    padding: 0.1em;
+    margin: auto;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    min-height: 12em;
+}
+
+footer img {
+    min-height: fit-content;
+    max-height: 50px;
+    padding-top: 3.5em;
+    opacity: 80%;
+}
+
+footer p {
+    padding-top: 0.5em;
+}
+
+.top {
+    --offset: 50px; 
+    position: sticky;
+    bottom: 20px;      
+    margin-right:10px; 
+    place-self: end;
+    margin-top: calc(100vh + var(--offset));
+    text-decoration: none;
+    padding: 10px;
+    font-family: "apparat";
+    color: black;
+    background: #F389A2;
+    border-radius: 100px;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: center;
 }
