@@ -14,13 +14,8 @@ header {
     max-height: 120px;
     position: sticky;
     top: 0;
-}
+    border-bottom: solid #25242D 1vw;
 
-h1 {
-    font-size: 4vw;
-    text-align: center;
-    place-self: center;
-    max-height: 120px;
 }
 
 header img {
@@ -31,7 +26,7 @@ header img {
 
 }
 
-h2 {
+h1 {
     color: #FFFFFF;
     font-size:calc(5vw);
     padding-top: 10vw;
@@ -43,6 +38,38 @@ h2 {
     font-style: italic;
 }
 
+h2 {
+    font-size: 3vw;
+    text-align: center;
+    place-self: center;
+    max-height: 120px;
+    padding-bottom: 2vw;
+}
+
+h3 {
+    font-size: 2vw;
+    text-align: left;
+    max-height: 120px;
+    padding-bottom: 2vw;
+    font-style: italic;
+}
+
+h4 {
+    font-size: 2vw;
+    text-align: right;
+    max-height: 120px;
+    padding-bottom: 2vw;
+    font-style: italic;
+}
+
+.intro {
+    font-size: calc(12px + 0.5vw);
+    width: 60%;
+    margin: auto;
+    text-align: justify;
+    justify-content: center;
+    padding-bottom: 5vw;
+}
 
 header .inner {
     display: grid;
@@ -117,27 +144,34 @@ header nav ul li a:hover {
 }
 
 main {
-    padding-top: 4em;
-    padding-bottom: 4em;
+    padding-top: 3vw;
+    padding-bottom: 4vw;
+
 }
 .gridcontainer {
     display: grid;
-    grid-template-columns: 50% 50%;
-    column-gap: 3em;
-    row-gap: 3em;
+    grid-template-columns: 45% 10% 45%;
+    row-gap: 5vw;
     text-align: center;
-    margin: auto;
     justify-content: center;
 }
 
 section {
-    max-height: 250px;
+    height: 30vw;
+    max-height: 40em;
     min-height: 250px;
+    background-color: rebeccapurple;
+    width: auto;
+    font-size: 1.2vw;
+    text-align: justify;
 }
 
 aside {
-    max-height: 250px;
+    height: 30vw;
+    max-height: 40em;
     min-height: 250px;
+    background-color: rebeccapurple;
+    width: auto;
 }
 
 footer {
