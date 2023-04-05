@@ -62,15 +62,6 @@ h4 {
     font-style: italic;
 }
 
-.intro {
-    font-size: calc(12px + 0.5vw);
-    width: 60%;
-    margin: auto;
-    text-align: justify;
-    justify-content: center;
-    padding-bottom: 5vw;
-}
-
 header .inner {
     display: grid;
     justify-content: space-between;
@@ -107,6 +98,15 @@ header nav ul li a:hover {
     padding: 0px;
     overflow: hidden;
     min-height: 30em;
+}
+
+.intro {
+    font-size: calc(8px + 0.8vw);
+    width: 60%;
+    margin: auto;
+    text-align: justify;
+    justify-content: center;
+    padding-bottom: 4vw;
 }
 
 .inner {
@@ -150,7 +150,7 @@ main {
 }
 .gridcontainer {
     display: grid;
-    grid-template-columns: 45% 10% 45%;
+    grid-template-columns: 47.5% 5% 47.5%;
     row-gap: 5vw;
     text-align: center;
     justify-content: center;
@@ -159,19 +159,26 @@ main {
 section {
     height: 30vw;
     max-height: 40em;
-    min-height: 250px;
-    background-color: rebeccapurple;
+    min-height: 380px;
     width: auto;
-    font-size: 1.2vw;
+    font-size: calc(0.3em + 0.95vw);
     text-align: justify;
+    border-bottom: #25242D solid 0.4vw;
 }
 
 aside {
     height: 30vw;
     max-height: 40em;
-    min-height: 250px;
-    background-color: rebeccapurple;
+    min-height: 380px;
     width: auto;
+}
+
+aside img {
+    border-radius: 20%;
+    height: fit-content;
+    height: 100%;
+    justify-content: center;
+    object-fit: contain;
 }
 
 footer {
