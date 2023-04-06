@@ -97,13 +97,11 @@ header nav ul li a:hover {
     background-color: #25242D;
     padding: 0px;
     overflow: hidden;
-    min-height: 30em;
+    min-height: 30vw;
 }
 
 .intro {
     font-size: calc(8px + 0.8vw);
-    width: 60%;
-    margin: auto;
     text-align: justify;
     justify-content: center;
     padding-bottom: 4vw;
@@ -151,31 +149,27 @@ main {
 .gridcontainer {
     display: grid;
     grid-template-columns: 47.5% 5% 47.5%;
-    row-gap: 5vw;
+    row-gap: 8vw;
     text-align: center;
     justify-content: center;
 }
 
 section {
-    height: 30vw;
-    max-height: 40em;
-    min-height: 380px;
+    height: 40vw;
+    max-height: 45em;
     width: auto;
-    font-size: calc(0.3em + 0.95vw);
+    font-size: calc(0.11em + 1.25vw);
     text-align: justify;
-    border-bottom: #25242D solid 0.4vw;
 }
 
 aside {
-    height: 30vw;
-    max-height: 40em;
-    min-height: 380px;
+    height: 40vw;
+    max-height: 45em;
     width: auto;
 }
 
 aside img {
     border-radius: 20%;
-    height: fit-content;
     height: 100%;
     justify-content: center;
     object-fit: contain;
@@ -220,4 +214,69 @@ footer p {
     white-space: nowrap;
     align-items: center;
     justify-content: center;
+}
+
+@media only screen and (max-width: 650px) {
+    .heroimg {
+        background-image: none;
+    }
+    .gridcontainer {
+        grid-template-columns: 100%;
+        row-gap: 1vw;
+    }
+    section {
+        font-size: calc(8px + 0.8vw);
+        padding-bottom: calc(1em + 4vw);
+    }
+    aside {
+        padding-bottom: 0.5vw;
+    }
+    .hero {
+        grid-template-columns: 100%
+    }
+    h1 {
+        font-size: calc(0.6em + 5vw);
+    }
+    h2 {
+    font-size: calc(0.8em + 3.5vw);
+    }
+    h3 {
+    font-size: calc(0.8em + 3.5vw);
+    text-align: center;
+    font-style: normal;
+    }
+    h4{
+    font-size: calc(0.8em + 3.5vw);
+    text-align: center;
+    font-style: normal;
+    }
+    aside img {
+    height: 45vw;
+    }
+    aside {
+    min-height: 50vw;
+    }
+}
+@media only screen and (max-width: 520px) {
+    section {
+        padding-bottom: calc(4.5em + 6vw);
+    }
+    header img {
+    width: 80px;
+    min-height: none;
+    min-width: none;
+        
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    section {
+        padding-bottom: calc(3em + 5vw);
+        min-height: 65vw;
+    }
+}
+@media only screen and (max-width: 320px) {
+    section {
+        min-height: 100vw;
+    }
 }
