@@ -8,15 +8,14 @@ body {
 header {
     background-color: #FFFFFF;
     display: grid;
-    height:calc(50px + 6vw);
+    height:calc(50px + 6vw); /*Throughout my CSS I have used the 'calc' property to make certain elements reactive, while still making sure they maintain a certain size on the page.*/
     place-items: center;
     min-height: 100px;
     max-height: 120px;
     position: sticky;
     top: 0;
-    border-bottom: solid #25242D 1vw;
+    border-bottom: solid #25242D 1vw; /* I added this small border to seperate the header from the background of the page, as they are both white*/
     color: black;
-
 }
 
 header img {
@@ -24,12 +23,11 @@ header img {
     max-width: 200px;
     min-height: 80%;
     min-width: 150px;
-
 }
 
 h1 {
     color: #FFFFFF;
-    font-size:calc(5vw);
+    font-size: 5vw;
     padding-top: 10vw;
     padding-bottom: 10vw;
     text-align: center;
@@ -79,16 +77,33 @@ h6 {
     padding-bottom: 2vw;
 }
 
+.h7 { /* I wish there were more 'h' tags for me to use, I just substituted a class here.*/
+    font-size:calc(8px + 1.8vw);
+    max-height: 120px;
+    padding-bottom: 2vw;
+    font-style: italic;
+    padding-top: 2vw;
+}
+
+.caption {
+    font-size:calc(8px + 1vw);
+    max-height: 110px;
+    text-align: center;
+    justify-content: center;
+}
+
 header .inner {
     display: flex;
     justify-content: space-between;
 }
+
 header nav {
     display: flex;
     align-items: center;
     text-align: right;
     justify-content: right;
 }
+
 header nav ul li {
     display: inline;
     margin-left: 0.1em;
@@ -127,27 +142,12 @@ header nav ul li a:hover {
     margin: auto;
 }
 
-.gallery {
-    display: grid;
-    grid-template-columns: 25% 40% 25%;
-    column-gap: 1em;
-    row-gap: 3em;
-    text-align: center;
-    margin: auto;
-    justify-content: center;
-}
-
-.gallery p {
-    background-color: blueviolet;
-    padding: 3em;
-}
-
 .reactivevanish {
     height: auto;
     max-width: 100%;
 }
 
-.heroimg {
+.heroimg { /* My hero image took some time to get working correctly, but it now functions reactively and looks good at most page sizes.*/
     width: 100%;
     height: 100%;
     background-image: url(../images/divingboard.png);
@@ -160,7 +160,7 @@ main {
     padding-bottom: 4vw;
 
 }
-.gridcontainer {
+.gridcontainer { /* The grid for my index page.*/
     display: grid;
     grid-template-columns: 47.5% 5% 47.5%;
     row-gap: 8vw;
@@ -189,6 +189,21 @@ aside img {
     object-fit: contain;
 }
 
+.gallery { /*The Gallery, partner, and event tags all correspond to their specific sub-page. They function similar to the 'section' and 'aside' tags for the index page, but are their own classes for control purposes.*/
+    display: grid;
+    grid-template-columns: 25% 40% 25%;
+    column-gap: 1em;
+    row-gap: 3em;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+}
+
+.gallery p {
+    background-color: blueviolet;
+    padding: 3em;
+}
+
 .partner {
     height: 50vw;
     max-height: 60em;
@@ -199,7 +214,7 @@ aside img {
 .partner img {
     justify-content: center;
     object-fit: contain;
-    max-height: fit-content;
+    height: fit-content;
     width: 100%;
     padding-bottom: 4vw;
     border-bottom: solid #25242D 0.2vw;
@@ -209,6 +224,7 @@ aside img {
     text-decoration: none;
     color: black;
 }
+
 .partner a:hover {
     text-decoration: underline;
     color: orange;
@@ -220,7 +236,34 @@ aside img {
     text-align: justify;
 }
 
-footer {
+.event {
+    height: 60vw;
+    max-height: 60em;
+    width: auto; 
+    padding-bottom: calc(5em + 5vw);
+}
+
+.event img {
+    justify-content: center;
+    object-fit: contain;
+    max-height: fit-content;
+    width: 100%;
+    padding-bottom: 1vw;
+}
+
+.event h6 {
+    font-size:calc(5px + 1.4vw);
+    text-align: center;
+    max-height: 120px;
+    padding-bottom: 2vw;
+}
+
+.event p {
+    font-size: calc(0.11em + 1.25vw);
+    text-align: justify;
+}
+
+footer { /* My footer code is quite simple, but it gets the job done as there is little information to put on the footer.*/
     background-color: #25242D;
     max-height: 20em;
     color: #FFFFFF;
@@ -243,7 +286,7 @@ footer p {
     padding-top: 0.5em;
 }
 
-.top {
+.top { /* This section of code was largely assisted from an online source, however I have altered quite a bit of the code to suit my site.*/
     --offset: 50px; 
     position: sticky;
     bottom: 20px;
@@ -261,7 +304,7 @@ footer p {
     justify-content: center;
 }
 
-.partnergrid {
+.partnergrid { /* I made a specific grid tag for each sub-page, so I could have more control of how each page specifically looked.*/
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 5vw;
@@ -269,7 +312,30 @@ footer p {
     padding-top: 6vw;
 }
 
-.title {
+.eventgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 8vw;
+    column-gap: 2vw;
+    padding-top: 6vw;
+}
+
+.gallerygrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1vw;
+    column-gap: 3vw;
+    padding-top: 1vw;
+    align-items: center;
+    text-align: center;
+}
+
+.gallerygrid aside {
+    padding-bottom: 0.5vw;
+    border-bottom: solid #25242D 0.5vw;
+}
+
+.title { /*This tag deals with the titles at the start of all the pages except the index.*/
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -277,9 +343,10 @@ footer p {
     background-color: #25242D;
     color: #FFFFFF;
     height: calc(6vw + 5em);
+    min-height: 150px;
 }
 
-.reactivemenu {
+.reactivemenu { /*This section of code was for my substitute for the CSS Hamburger. I couldn't get it to work without copying a tutorial's code, so I preferred to write my own solution as I'd rather not use code I dont understand.*/
     width: 100%;
     height: 20vw;
     min-height: 7em;
@@ -288,6 +355,7 @@ footer p {
     text-align: center;
     justify-content: center;
 }
+
 .reactivemenu ul li a {
     color: #FFFFFF;
     font-size: calc(1em + 3vw);
@@ -295,7 +363,10 @@ footer p {
     line-height: 1.2em;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) { /* I didn't add much reactive at 768px, this was mainly just to drop grid sizes and fix spacing of sections or text.*/
+    .eventgrid {
+        grid-template-columns: 1fr 1fr;
+    }
     .partnergrid {
         grid-template-columns: 1fr 1fr;
     }
@@ -305,14 +376,22 @@ footer p {
     .partnergrid {
         padding-bottom: 20vw;
     }
+    .event h6 {
+        font-size:calc(10px + 1.4vw);
+    }
+    
+    .event p {
+        font-size: calc(0.2em + 1.55vw);
+        text-align: justify;
+    }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 650px) { 
     header {
         border-bottom: none;
     }
     .heroimg {
-        background-image: none;
+        background-image: none; /* This is where I removed the diving board from the hero section. I did this for readability on smaller devices.*/
     }
     .reactivemenu {
         display: flex;
@@ -331,7 +410,7 @@ footer p {
     .hero {
         grid-template-columns: 100%
     }
-    h1 {
+    h1 { /* I made most of the headings change size at smaller screen widths so I could keep them scaling reactively while also handling the switch from landscape to vertical devices.*/
         font-size: calc(0.6em + 5vw);
     }
     h2 {
@@ -350,8 +429,14 @@ footer p {
     aside img {
     height: 45vw;
     }
+    .gallerygrid aside img {
+    height: 65vw;
+    }
     aside {
     min-height: 50vw;
+    }
+    .gallerygrid aside {
+    height: 70vw;
     }
     header nav ul li a {
     display: none;
@@ -376,8 +461,26 @@ footer p {
     header .inner {
         justify-content: center;
     }
+    .h7 {
+            font-size: calc(12px + 3vw);
+        }
+    .eventgrid {
+        grid-template-columns: 1fr;
+    }
+    .event h6 {
+        font-size:calc(15px + 1.6vw);
+        text-align: center;
+        max-height: 120px;
+        padding-bottom: 2vw;
+    }
+    
+    .event p {
+        font-size: calc(0.3em + 1.25vw);
+        text-align: justify;
+    }
 }
-@media only screen and (max-width: 520px) {
+
+@media only screen and (max-width: 520px) { /*These lower sections were mainly to deal with font overlapping other elements, or images overlapping other elements.*/
     section {
         padding-bottom: calc(4.5em + 6vw);
     }
@@ -400,4 +503,3 @@ footer p {
         min-height: 100vw;
     }
 }
-
